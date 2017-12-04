@@ -1,0 +1,68 @@
+Assignment 3
+You are to use Linked Lists to do this programm. 
+The "XYZ Widget Store" receives shipments of widgets at various costs. 
+The store's policy is to charge a 30% markup,
+and to sell widgets which were received earlier before widgets which v,'ere 
+received later. This is called a First In First Out policy (FIFO). 
+
+Write a program using linked lists that reads in 3 types of input data and does the following. 
+
+    A sales record which contains an "S" in column 1 and a quantity which represents the number of 
+    widgets sold. 
+    
+    A receipt record which contains an "R" in column 1 and a quantity and a price Which represents 
+    the receipt of a quantity of widgets at the stated cost per widget. 
+    
+    A promotion card which contains a "P" in column 1 and a number such as 25 which would 
+    represent a 25% discount to the next 2 buying customers (the next 2 sales cards) 
+
+The program should... 
+
+print a message after each receipt record is read in With the price Of the Widgets received.
+
+print a message after each promotion card is read in with the amount of discount the next two 
+customers will be receiving 
+    
+After a sales record is read in, print a message stating the number sold and the price of each 
+widget and total price of the order. For example if 200 widgets were sold and there were 50 widgets at 
+$1.00 and 100 at $2.00 and 50 at $3.00 print (recall the 30% markup and the FIFO policy) 
+
+            200 Widgets sold 
+            50 at 1.30each      Sales: $65.00 
+            100 at 2.60 each    Sales: $260.00 
+            50 at 3.90 each     sales. $195.00 
+            Total sales: $520.00 
+
+If there are insufficient number of widgets in stock to fill an order sell as many as are available and 
+then print...
+
+            "remainder of xxx Widgets not available 
+
+Do not forget the promotional discount 
+At the end of the data before exiting the Vogram print out under a separate heading the widgets 
+still left in stock and their original purchase price. 
+
+R,150,1.00
+R,130,2.0
+S,145
+R,50,2.50
+S,75
+S,180
+R,50,4.00
+R,30,5.00
+R,40,5.50
+P,30%
+S,50
+S,30
+R,50,6.00
+R,265,10.00
+S,60
+P,50%
+S,100
+S,70
+S,175
+R,40,14.00
+R,75,15.00
+S,110
+R,30,16.00
+R,40,18.00

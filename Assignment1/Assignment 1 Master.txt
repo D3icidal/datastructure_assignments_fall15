@@ -1,0 +1,10 @@
+0001,Hop Barnett,2270.19
+0002,Channing Terrell,6544.02
+0003,James Keller,1664.94
+0004,Quyn Sampson,8109.73
+0005,Cheryl Head,5968.38
+0006,Lucian Hewitt,9809.91
+0007,Emery Sosa,5092.22
+0008,Hamilton Pierce,8555.65
+0009,Shafira Trevino,364.59
+0010,Wade Estes,308.28

@@ -1,0 +1,80 @@
+                Assignment 2 Pseudo 
+
+This program assumes that a cornpany has warehouses in 5 cities: 
+
+    New York, Los Angeles, Miami, Houston, and Chicago. 
+
+In each warehouse the company stocks three items. 
+A record contains the amount of each item currently in each warehouse. 
+The record should contain an array of 5 warehouses with the name of each warehouse and an array ot the 
+3 items With the amount that is currently in stock in the warehouse. 
+nitially the Warehouses are empty. Read in a card containing the tree prices of the three items. Then 
+read 'in cards Wfich may be any one of t'.vo types: 
+
+
+PSEUDO
+
+    Array invRecord [5] [4] : Make a 2D array 5x4, with the horizontal row being warehouse, item1 qty, item2 qty, item3 qty
+        (only fill in location first)
+    Float itm1, itm2, itm3: Make 3 variables for the 3 amounts
+    Array transactions [100] [5] : Make 2D array 100x5 for: O/S, Warehouse,  item1 qty, item2 qty, item3 qty
+    tempInv1D
+    
+    warehouses ["New York", "Los Angeles", "Miami", "Houston", "Chicago"]
+    float price = [0,2,7,8]
+    float linePrice=0
+    float transferFee=1.1
+    
+    boolean unfilled = 0 // 0=filled, 1=filled
+    Read in transactions (looping until EOF)
+     into 1D array
+    
+    Read 1D array into invRecord [x] [y]
+
+    Process transactions
+        if y = 0    //O or S
+            if transactions [x] [0] == S   //if shipment
+                cout each element (city amt1 amt2 amt3)
+                update warehouse invRecord
+                    update invRecord [x] [1]
+                    update invRecord [x] [2]
+                    update invRecord [x] [3]
+                print out warehouse invRecord
+            
+            unfilled=0    
+            if transactions [x] [0] == O   //if Order
+                while y < 4
+                {
+                    if transactions[x][y+1] > invRecord [x][y] // if insufficient supply
+                        idx1=0 idx2=0 idx3=0 largestWH=0 secondLargest=0
+                        qtyneeded= transactions[x][y+1] - invRecord [x][y]
+                        for (idx1=0 < 2      //begin searching for largest warehouse
+                             if (invRecord [idx2][y] > invRecord [idx2+1][y])  
+                                largestWH=idx2
+                                
+                        if ( invRecord [largestWH][y] > qtyneeded )
+                            invRecord [largestWH][y] -- qtyneeded   //subtract from largest wh in stocks
+                            invRecord [x][y] ++ qtyneeded   //ship to warehouse needed
+                            invRecord [x][y] -- transactions[x][y+1]    //subtraction for order
+                            cout <<endl << qtyneeded << " of item " << y << "shipped from "
+                                << warehouses[largestWH] << " to " << warehouses[x] << endl;
+                            linePrice=linePrice + (qtyneeded * (price[y]*transferFee)
+                        else
+                            cout<<"\n\tOrder Unfilled\n\n"
+                            unfilled =1
+                    else    // If sufficient supply
+                        invRecord [x][y] -- transactions[x][y+1]
+                        linePrice=linePrice + (transactions[x][y+1] * (price[y])
+                }
+                
+                cout << "\n\tOrder Update:\t" << warehouses[x] << invRecord[x][1] << invRecord[x][2] << invRecord[x][3] << endl;
+                    << "\n\t\tPrice of Order: " << linePrice
+                
+                
+                    
+                    
+                        
+                        
+  
+                
+                    if idx2 != x    //don't test the warehouse against itelf

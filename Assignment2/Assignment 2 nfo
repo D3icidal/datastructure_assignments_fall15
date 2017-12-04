@@ -1,0 +1,38 @@
+Data Structures (CIS C, 
+M Lowenthal 
+ASSIGNMENT REVIEW 
+This program assumes that a cornpany has warehouses in 5 cities: New York, Los Angeles Miami, 
+Houston, and Chicago. In each warehouse the company stocks three items. A record contains the amount of 
+each item currently in each warehouse. 
+The record should contain an array of 5 warehouses with the name of each warehouse and an array ot the 
+3 items With the amount that is currently in stock in the warehouse. 
+nitially the Warehouses are empty. Read in a card containing the tree prices of the three items. Then 
+read 'in cards Wfich may be any one of t'.vo types: 
+1. Shipment cards containing„. 
+amts 
+city amtl 
+amt2 
+This data represents a shipment to a given civ of amtl of itemt, amt2 of item2, and amts of item3. 
+2. Order cards containing... 
+O city amtl 
+This data represents an order in a given city ot the respective amounts ot the various items. 
+As each shipnEnt card is read in, pr nt it out, update the amounts in that warehouse and then print cn the 
+next line: 
+city 
+amtl 
+arnt2 
+amts 
+As each order card is read in, print it out It ttMe is enough in stock at that warehouse cf each item, 
+update the amounts. If there is not enough, search the other warehouses for the one Which has the most of 
+that particular item, ship the amount needed from one warehouse to the other, printing out: 
+x of item y shipped from cityl to city2 
+and 
+cityl amt 1 amt2 amts 
+10% extra is to be charged for any item shipped from one city to. anotFær. If no single warehouse has 
+enough extra to till the order tor a particular item, print out : 
+Order Unfilled 
+However any shipments of the previous items remain in effect. 
+In either case print Out the adjusted.. 
+City amtl amt2 amt3 
+And if the order if filled print... 
+Price of Order: price 

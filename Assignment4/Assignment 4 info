@@ -1,0 +1,71 @@
+Data Structures 
+M. Lowenthal 
+
+Write a program Which will process several sets of numbers. 
+
+For each set of numbers, you must... 
+    1) Create a binary tree 
+    2) print the tree using "inorder", 'Preorder", and "postorder" 
+    3) Call a subroutine '"count', Which returns the number Of nodes in the tree 
+    4) Call a subroutine "children" which prints the number of children each node has 
+    5) Insert and delete several nodes accorffmg to the instructions given 
+    6) Print the tree again using "inorder". "preorder", and "postorder" 
+    7) Call subroutine "count" again, which returns the number of nodes in the tree 
+    8) Call a subroutine 'children" again, which prints the number of children each node has 
+    9) Free the tree 
+    
+To be done using dynamic storage and pointers. 
+To be done using static storage and arrays. 
+
+
+Data to be used: (-999 terminates the origina data) 
+set #1   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 -999
+        insert 21   delete 1    insert 0    delete 10
+        delete 11   delete 5    delete 2    insert 10
+        
+set #2  3 1 5 -999
+        delete 3    delete 1
+        
+set #3  -999
+        delete 15   insert 30   insert 5    insert 10   insert 20
+        delete 20   delete 10   delete 5    delete 15   delete 30
+        
+set #4  2 -999
+        delete 2
+etc . . .
+
+Note: Your insert/delete routines must be able to handle duplicate values and deleting non-existant values 
+
+
+PSEUDO 
+
+    //DECALRE VARIABLES
+    
+    
+    //Create a binary tree
+    TreeNode *root;  // Pointer to the root node in the tree.
+    root = NULL;     // Start with an empty tree.
+    
+    //Read in sets into 1D array
+    
+    //Read in 1D array to parse into tree
+    
+            //if treeFlag==true
+                //treeFlag=false
+                //while subtr1 != -999
+                    //insert (root substr)
+                //run inorder, preorder, postorder, count, children,
+                
+            //else if substr has letters (if string.find('e') != -1)
+            
+                //if substr.find('set' != -1)
+                    //cout Tree for substr (ex: Set #1)
+                    //set treeFlag==true
+                    
+                //else if substr.find("delete") != -1
+                    //deleteNode(root, whatever number it is)
+                    
+                //else
+                    //insert(root, whatever number it is)
+        //when done with insert // delete
+            //run inorder, preorder, postorder, count, children,

@@ -1,0 +1,55 @@
+Assignment 3 Pseudo
+
+//Read data into 1D array of strings
+
+//Loop begin reading 1D into List  
+    //If "R"    Add to end of list as int for qty, and a float for price
+    
+    //If "P"    Set a int promoCount varable to 2 to indicate promotion start
+                set PromoDiscount variable to %
+    
+    
+    //if "S"    salePrice = 0
+                Set qtySold and qtyNeeded. Cout
+                If qtyNeeded>0
+                ***Need to find someway of checking if this is end of list and still do command. 
+                while list -> next != null \\while not at the end of the list
+                
+                    if qtyNode >= qtyNeeded //if current node has plenty
+                      
+                        salePrice = ((Node Price * MU))
+                        cout qty at salePrice each      Sales: $ qty * salePrice
+                        totaleSale++salePrice
+                        qtyNode --qtyNeeded //subtract qtyNeeded from current node
+                        qtyNeeded=0;
+                        if qtyNode=0
+                            delete node
+                        
+                    else                    //if node doesn't have the full amount
+                        cout qty at salePrice each      Sales: $ qty * salePrice
+                        qtyNeeded -- qtyNode
+                        totaleSale++salePrice
+                    
+                        
+                
+                If promoCount > 0
+                    salePrice = ((Node Price * MU)*Promo) 
+                    cout "Promo Applied: Promo"
+                else
+                    salePrice = ((Node Price * MU)) 
+                
+                
+                
+    
+    
+    
+    
+    
+    
+    
+Promo calculation (100-promo)*0.01 
+    so 25% = 0.75, then just multiply result by 0.75
+    
+Alt Promo calculation:    discount = (salePrice * (promo / 100))
+                        salePrice =salePrice - discount
+

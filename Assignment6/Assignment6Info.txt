@@ -1,0 +1,45 @@
+Data Structures (CIS 
+M. Lowentnal 
+Write a complete program to collect statistics on a series Of sorts. 
+The main program Will continue the following until the end Of the set Of data.. 
+    I. Call a subprogram to read a group Of numbers to be sorted 
+    2. Call a subprogram to sort these values using three sorts 
+    3. Call a subprogram to compare the three Sorts 
+
+STEP 1 : The read subprograrn Will first read a heading the group Of numbers (eg the heading 
+might be: 1 0 numbers in Order, or 50 numbers in a random order or 100 numbers in reverse order). Then it 
+"Il read in the group Of numbers. The Original group should be printed as it is read 'n. 
+
+STEP 2: The threesort subprogram Will call three seperate sorts (be sure to send each one the items 'n 
+their original order) 
+
+    a. One sort will be a stupid one - either linear or bubble 
+    b. One sort will be quicksort 
+    c. One sort will be any other good one of your choice (eg heapsort) 
+
+After each individual sort subprogram finishes, the sorted array should be printed. Also print the number 
+Of comparisons each sort and the Of times elements were interchanged. (These values must be 
+cornputed within the three incfrvidual sorting subprograms. use either additional parameters or globa 
+variables, but be sure to include comments.) 
+
+STEP 3: The companson subprogram will determine which sort used the most comparisons. which was 
+in middle, and which used the least. It will do the same thing for interchanges 
+DATA: Remember that each group of data must Start with a heading describing What it is testing. You 
+are allowed to have repeats in the group, but there should not be too many repeated values. you should 
+include at least the following 9 groups (the heading for a group can What I use to describe it) 
+
+
+10 numbers in alrnost sorted order (two or three numbers interchanged) 
+10 numtHS in random order 
+10 numbers in reverse order 
+50 numbers in almost Sorted order (a few out of order) 
+50 numbers in random order 
+50 numbers n reverse order 
+100 numbers in almost sorted order (a few out ot order) 
+100 numberg in random Order 
+100 numbers in reverse Order 
+
+OPTIONAL: 1 Construct a sort which minimizes the number of interchanges (note: interchanges, not 
+comparisons) 
+2. Construct a way to generate 50 (or IOC) numbers, numbered 1-50 (or 1-100), without repeats. in random 
+order. 

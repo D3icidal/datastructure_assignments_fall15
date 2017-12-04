@@ -1,0 +1,49 @@
+Data (CIS ) 
+U:nventhel 
+REVIEW 
+The "ABC Hardware Company" has hired you to write a program for it's Accounts Receivable department (AR are 
+accounts that owe money to the company because they have purchased items and have not yet paid for them) 
+There are tvvo types Of input data 
+1) A master f' e in ascending order by customer number numbers are 4 digas long) The file also 
+contains a 
+20 character customer narræ and a balance dt_E. 
+2) A transaction tile that contains records ot each transaction. This tile is also in ascending order by customer 
+number. 
+There should be more than one transaction record per master record. Each related group Of date in a file is 
+called a 
+record. A record should be stored in a Structure. 
+Each record Starts With a character, 'O' for Order or "P' for payment. Each record also contains the four-digi 
+customer 
+number, a tour-digit transaction number, and up to three more valtns: 
+If the code 's the record contains the item Ordered (20 characters), the quantty ordered (an integer) plus the cost 
+ot the aem. (You must multip y to get the total cost) 
+If the code is the record Contains the amount Of the payment 
+You are to read in records one at a time from the two fles and use the transactZn file records to update the master 
+file. Process all transaction records for æch master record before going On to the next master record. If the 
+transaction record contains an "O" column I , calculate the Order amount and add to the balance dæ. It the 
+record contains a "P" n Column I, subtract the payment from the balance due. Keep a running total Of ttæ A/R 
+Balance Of ABC Company (That is sum Of the balances due tor each Customer. 
+Your program should.... 
+records in tt-æ transaction tile that do not appear in the master 
+After processing a master record and all it's transactions the program shoud prepare an invoice for each customer 
+which "Sts the customer name, mner, previous balance (balance before transactions were performed), al 
+transactions, and the final balance due (balance after transactions are performed. 
+The OtAput should 100k somethng like this... 
+CUSTOMER NAME 
+TRANSACTION # 
+TRANSACTION # 
+TRANSACTION # 
+TRANSACTION # 
+CUSTOMER NUMBER 
+PREVIOUS BALANCE $ XXX.XX 
+ITEM ORDERED 
+ORDERED 
+ORDERED 
+aALANCE DUE 
+S ORDER AMOUNT 
+$ ORDER AMOUNT 
+S PAYMENT AMOUNT 
+S ORDER AMOUNT 
+$ xxx_xx 
+forget, payments reduce the balance and orders increase it. You are to create your own data using at least 7 
+customers With an average Of 5 transactions each 
